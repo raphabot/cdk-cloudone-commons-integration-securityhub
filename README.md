@@ -6,11 +6,16 @@ This CDK project automates the deployment of all of the requirements in a given 
 
 ## How to deploy
 
-### Requirements
+### Requirements from Cloud One
 
 * `Cloud One Account Id`
 * `Cloud One Account Region`
 * `Cloud One Account API Key`
+
+### Required Tools
+
+* `git`
+* `cdk`
 
 ### Commands to deploy
 
