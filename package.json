@@ -1,6 +1,6 @@
 {
   "name": "security-hub",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "bin": {
     "security-hub": "bin/security-hub.js"
   },
@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "build-lambda": "cd lambda/create-integration && npm install"
   },
   "devDependencies": {
     "@types/jest": "^28.1.1",
