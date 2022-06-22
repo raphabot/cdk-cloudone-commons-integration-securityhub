@@ -9,7 +9,7 @@ This CDK project automates the deployment of all of the requirements in a given 
 ### Requirements
 
 * `Cloud One Account Id`
-* `Cloud One Account Regio`
+* `Cloud One Account Region`
 * `Cloud One Account API Key`
 
 ### Commands to deploy
