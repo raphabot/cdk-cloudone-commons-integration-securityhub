@@ -1,14 +1,21 @@
-# Welcome to your CDK TypeScript project
+# Cloud One Commons - Security Hub Integration
 
-This is a blank project for CDK development with TypeScript.
+Using an AWS Security Hub integration channel you can send security events and assessments from Cloud One services into AWS Security Hub. This will allow you to analyze Trend Micro Cloud One data alongside data from AWS Cloud Native security solutions like: 'Amazon GuardDuty', 'Amazon Inspector', 'Amazon Macie', 'AWS Identity' and 'Access Management (IAM) Access Analyzer', 'AWS Systems Manager', and 'AWS Firewall Manager'. Security Hub is a single place that can aggregate, organize, prioritize, and automate the remediation of security alerts, or findings.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+This CDK project automates the deployment of all of the requirements in a given AWS account and uses a custom resource to create the integration in the Cloud One backend.
 
-## Useful commands
+## How to deploy
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+### Requirements
+
+* `Cloud One Account Id`
+* `Cloud One Account Regio`
+* `Cloud One Account API Key`
+
+### Commands to deploy
+
+```
+git clone https://github.com/raphabot/cdk-cloudone-commons-integration-securityhub.git
+cd cdk-cloudone-commons-integration-securityhub 
+npm run build-lambda
+cdk deploy --parameters CloudOneId=YOUR_CLOUD_ONE_ACCOUNT_ID --parameters CloudOneRegion=YOUR_CLOUD_ONE_ACCOUNT_REGION --parameters CloudOneApiKey=YOUR_CLOUD_ONE_ACCOUNT_API_KEY
