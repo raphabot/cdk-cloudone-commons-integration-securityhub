@@ -21,6 +21,8 @@ This CDK project automates the deployment of all of the requirements in a given 
 
 ```
 git clone https://github.com/raphabot/cdk-cloudone-commons-integration-securityhub.git
-cd cdk-cloudone-commons-integration-securityhub 
+cd cdk-cloudone-commons-integration-securityhub
+npm install
 npm run build-lambda
 cdk deploy --parameters CloudOneId=YOUR_CLOUD_ONE_ACCOUNT_ID --parameters CloudOneRegion=YOUR_CLOUD_ONE_ACCOUNT_REGION --parameters CloudOneApiKey=YOUR_CLOUD_ONE_ACCOUNT_API_KEY
+```

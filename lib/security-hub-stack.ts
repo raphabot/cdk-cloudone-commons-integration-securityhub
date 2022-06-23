@@ -50,7 +50,7 @@ export class SecurityHubStack extends Stack {
       architecture: Architecture.ARM_64,
       environment: {
         URL: `https://integrations.${cloudOneRegion.valueAsString}.cloudone.trendmicro.com/api/integrations`,
-        ARN: `arn:${Stack.of(this).partition}:securityhub:${Stack.of(this).region}:${Stack.of(this).account}:product/218213273676/default`,
+        ARN: `arn:${Stack.of(this).partition}:securityhub:${Stack.of(this).region}:${Stack.of(this).account}:product/${Stack.of(this).account}/default`,
         AWS_ACCOUNT_ID: Stack.of(this).account,
         ROLE_ARN: role.roleArn,
         NAME: 'Container Security to Security Hub.',
