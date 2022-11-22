@@ -19,7 +19,7 @@ This CDK project automates the deployment of all of the requirements in a given 
 
 ### Commands to deploy
 
-```
+```bash
 git clone https://github.com/raphabot/cdk-cloudone-commons-integration-securityhub.git
 cd cdk-cloudone-commons-integration-securityhub
 npm install
